@@ -1,0 +1,28 @@
+.container {
+  overflow: auto;
+  scroll-snap-type: x proximity;
+  display: flex;
+}
+.area {
+  scroll-snap-align: start;
+  height: 100vh;
+  width: 100vw;
+  flex: none;
+}
+
+/* General Styling */
+body {
+  font-size: 4rem;
+  text-align: center;
+  color: #fff;
+}
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.area:nth-child(even) {
+  background-color: #0db;
+}
+.area:nth-child(odd) {
+  background-color: #0bd;
+}
